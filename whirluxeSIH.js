@@ -32,7 +32,7 @@ const menu = {
 
             {
                 name: "Idli Sambar",
-                image: ""C:\Users\Dell\Downloads\idli sambar.jpeg"",
+                image: "C:\Users\Dell\Downloads\idli sambar.jpeg",
                 calories: 250,
                 protein: 6,
                 carbs: 40,
