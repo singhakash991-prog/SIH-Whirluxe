@@ -31,8 +31,8 @@ const menu = {
         breakfast: [
 
             {
-                name: "Poha",
-                image: "images/poha.jpg",
+                name: "Idli Sambar",
+                image: ""C:\Users\Dell\Downloads\idli sambar.jpeg"",
                 calories: 250,
                 protein: 6,
                 carbs: 40,
@@ -41,7 +41,7 @@ const menu = {
             },
 
             {
-                name: "Milk",
+                name: "Vada",
                 image: "images/milk.jpg",
                 calories: 120,
                 protein: 6,
@@ -51,7 +51,16 @@ const menu = {
             },
 
             {
-                name: "Banana",
+                name: "Milk",
+                image: "images/banana.jpg",
+                calories: 90,
+                protein: 1,
+                carbs: 23,
+                fats: 0,
+                allergens: []
+            }
+            {
+               name: "Banana",
                 image: "images/banana.jpg",
                 calories: 90,
                 protein: 1,
