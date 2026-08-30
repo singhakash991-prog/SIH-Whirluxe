@@ -1,0 +1,639 @@
+/* =========================================
+   MESSMATE - MAIN STYLES
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    background: #f8f7f3;
+    color: #20201d;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    background: #f8f7f3;
+    border-bottom: 1px solid #e5e3dc;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+
+    display: flex;
+    gap: 7px;
+    align-items: center;
+}
+
+.logo-highlight {
+    color: #d46a3a;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #55544f;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.2s;
+}
+
+.nav-links a:hover {
+    color: #d46a3a;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+    max-width: 1250px;
+    margin: auto;
+
+    min-height: 620px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 70px;
+
+    padding: 70px 30px;
+}
+
+.small-heading,
+.section-label {
+    font-size: 12px;
+    letter-spacing: 2px;
+
+    font-weight: 700;
+
+    color: #d46a3a;
+
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(55px, 7vw, 85px);
+
+    line-height: 0.98;
+
+    margin-bottom: 30px;
+}
+
+.hero h1 span {
+    color: #d46a3a;
+}
+
+.hero-description {
+    max-width: 490px;
+
+    font-size: 17px;
+    line-height: 1.7;
+
+    color: #66645e;
+
+    margin-bottom: 35px;
+}
+
+.main-button {
+    display: inline-block;
+
+    padding: 15px 25px;
+
+    background: #24231f;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-weight: 600;
+
+    transition: 0.25s;
+}
+
+.main-button:hover {
+    transform: translateY(-2px);
+    background: #d46a3a;
+}
+
+
+/* HERO IMAGE */
+
+.hero-image {
+    height: 480px;
+
+    overflow: hidden;
+
+    border-radius: 25px;
+
+    box-shadow: 0 25px 60px rgba(0,0,0,0.12);
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.5s;
+}
+
+.hero-image:hover img {
+    transform: scale(1.04);
+}
+
+
+/* =========================================
+   DAY SECTION
+========================================= */
+
+.day-section {
+    max-width: 1100px;
+    margin: 20px auto 60px;
+
+    padding: 0 25px;
+}
+
+.day-section h2,
+.section-heading h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 40px;
+
+    margin-bottom: 30px;
+}
+
+.day-selector {
+    display: flex;
+
+    gap: 10px;
+
+    overflow-x: auto;
+
+    padding-bottom: 10px;
+}
+
+.day {
+    min-width: 85px;
+
+    padding: 14px 10px;
+
+    background: white;
+
+    border: 1px solid #e4e1d9;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+.day span {
+    display: block;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    color: #77746e;
+}
+
+.day small {
+    display: block;
+
+    font-size: 22px;
+
+    margin-top: 4px;
+
+    font-weight: 700;
+}
+
+.day:hover {
+    border-color: #d46a3a;
+}
+
+.day.active {
+    background: #24231f;
+    color: white;
+
+    border-color: #24231f;
+}
+
+.day.active span {
+    color: #ddd;
+}
+
+
+/* =========================================
+   NUTRITION
+========================================= */
+
+.nutrition-section {
+    background: #eeece5;
+
+    padding: 65px 7%;
+}
+
+.nutrition-section .section-heading {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.nutrition-cards {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+.nutrition-card {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 16px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    border: 1px solid #e2e0d8;
+}
+
+.nutrition-icon {
+    width: 48px;
+    height: 48px;
+
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f4f2ed;
+
+    font-size: 22px;
+}
+
+.nutrition-card p {
+    color: #77746e;
+
+    font-size: 13px;
+
+    margin-bottom: 3px;
+}
+
+.nutrition-card h3 {
+    display: inline;
+
+    font-size: 28px;
+}
+
+.nutrition-card span {
+    color: #77746e;
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   MENU
+========================================= */
+
+.menu-container {
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 80px 25px;
+}
+
+.meal-section {
+    margin-bottom: 80px;
+}
+
+.meal-heading {
+    margin-bottom: 25px;
+}
+
+.meal-heading > div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.meal-emoji {
+    font-size: 35px;
+}
+
+.meal-time {
+    font-size: 11px;
+
+    letter-spacing: 1.5px;
+
+    color: #99958c;
+
+    font-weight: 600;
+}
+
+.meal-heading h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 36px;
+}
+
+
+/* FOOD GRID */
+
+.food-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+/* FOOD CARD */
+
+.food-card {
+    background: white;
+
+    border: 1px solid #e5e2da;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    transition: 0.25s;
+}
+
+.food-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+}
+
+.food-image {
+    width: 100%;
+    height: 210px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.food-info {
+    padding: 20px;
+}
+
+.food-info h3 {
+    font-size: 19px;
+
+    margin-bottom: 5px;
+}
+
+.food-calories {
+    color: #d46a3a;
+
+    font-weight: 700;
+
+    font-size: 14px;
+
+    margin-bottom: 15px;
+}
+
+.macros {
+    display: flex;
+
+    gap: 8px;
+
+    flex-wrap: wrap;
+}
+
+.macro {
+    padding: 6px 9px;
+
+    background: #f5f3ee;
+
+    border-radius: 6px;
+
+    font-size: 11px;
+
+    color: #5c5952;
+}
+
+.allergen-tags {
+    margin-top: 14px;
+}
+
+.allergen-tag {
+    display: inline-block;
+
+    font-size: 10px;
+
+    background: #fff0eb;
+
+    color: #bd4d2d;
+
+    padding: 5px 8px;
+
+    border-radius: 5px;
+
+    margin-right: 4px;
+}
+
+
+/* =========================================
+   ALLERGEN SECTION
+========================================= */
+
+.allergen-section {
+    background: #24231f;
+
+    color: white;
+
+    padding: 70px 7%;
+}
+
+.allergen-content {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.allergen-title {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    margin-bottom: 15px;
+}
+
+.allergen-title > span {
+    font-size: 38px;
+}
+
+.allergen-title h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 35px;
+}
+
+.allergen-section > .allergen-content > p {
+    color: #bcbab3;
+
+    margin-bottom: 25px;
+}
+
+.allergen-list {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+.allergen-list span {
+    background: #383731;
+
+    border: 1px solid #4a4840;
+
+    padding: 9px 15px;
+
+    border-radius: 30px;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    background: #181815;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 45px 20px;
+}
+
+.footer-logo {
+    font-size: 22px;
+
+    font-weight: 700;
+
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #929089;
+
+    font-size: 13px;
+}
+
+.copyright {
+    margin-top: 25px;
+
+    font-size: 11px;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 850px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+
+        padding-top: 50px;
+
+        gap: 40px;
+    }
+
+    .hero-image {
+        height: 350px;
+    }
+
+    .nutrition-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .food-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .hero h1 {
+        font-size: 55px;
+    }
+
+    .nutrition-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .food-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .day {
+        min-width: 70px;
+    }
+
+}
